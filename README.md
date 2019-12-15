@@ -73,3 +73,18 @@ important.
 
 I have used data structures like Priority Queues to find the torch bearer person who has the maximum speed so that he 
 can cover the single distance in the bridge faster. Also to simulate the crossing of the bridge, I have used C++ queue Data Structures.
+
+
+## Demonstrate the operation of your program using the following inputs: the hikers cross 3 bridges, at the first bridge (100 ft long) 4 hikers cross (hiker A can cross at 100 ft/minute, B at 50 ft/minute, C at 20 ft/minute, and D at 10 ft/minute), at the second bridge (250 ft long) an additional hiker crosses with the team (E at 2.5 ft/minute), and finally at the last bridge (150 ft long) two hikers are encountered (F at 25 ft/minute and G at 15 ft/minute).
+
+As per the my program and calculation, my program calculates this with maximum paraellism and the following is the result.
+
+Time to cross the First Bridge = 19.000000 
+
+Time to cross the Second Bridge = 150.000000 
+
+Time to cross the Third Bridge = 109.000000 
+
+Total fastest Time for the Entire trip =  278 minutes
+
+I have used two methods using shared memory and writing to a file in a shared File system. The result which I get is 278 minutes.
