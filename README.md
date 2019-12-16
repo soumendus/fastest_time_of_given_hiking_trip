@@ -33,12 +33,12 @@ I have devised concurrent approach to solve this problem. Activity at each bridg
 # 2. Architecture and design
 
 I have used Concurrent programming. Master node delegates work to worker nodes in the cluster and finally calculates the result after all the worker nodes completes their part of job.The worker nodes work all independently in a parallel manner
-so execution happens faster.
+so execution happens faster. To further improve performance Creation of thread pool and creation of memory pool approach can be used.
 
 
 # 3. Testing Approach
 The following testing approach I am following. Apart from the below strategies, I have to test my own written YAML parser which needs to be bulletfroof. I have not used any available XML or YAML parser. If I would have used any available YAML/YML parsers, my testing efforts would have been less and I would have completed the coding faster. 
-To further improve performance Creation of thread pool and creation of memory pool approach can be used.
+
 
 (a) Test each modules based on the Test Description Specification i.e check the observed behavior, with respect to the expected behavior. Create a C++ test driver which reads test values from the input file and feeds the module under test. Use conventional test coverage tools, memory purifiers, valgrind, static analysis tools, dynamic tracers debuggers etc.
    
