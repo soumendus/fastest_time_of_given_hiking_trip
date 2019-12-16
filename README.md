@@ -67,9 +67,7 @@ The following testing approach I am following.
 Indent the code and document it. I have done that. Organize all the classes to a header file and the function definitions to CPP files. Currently code organization is pending. I will do it eventually. I only got a few hours to work in Saturday and some time to ubload the code in Sunday. Did not have much time.
 
 
-# 5. Explanation - as a C++ thought leader in the organization you will be working with and
-mentoring other engineers. How well you can describe and explain your solution is very
-important.
+# 5. Explanation
 
 I have used data structures like Priority Queues to find the torch bearer person who has the maximum speed so that he 
 can cover the single distance in the bridge faster. Also to simulate the crossing of the bridge, I have used C++ queue Data Structures.
