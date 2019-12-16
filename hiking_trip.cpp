@@ -309,7 +309,7 @@ void thread_task(calculate_fastest_time_each_bridge& o) {
  *  Master node: Parsing the YAML file, book keeping, and creating jobs for submission to the worker nodes. It collects results from worker nodes and prints.
  */
 
-int main() {
+int main(int argc, char** argv) {
 
 	string next;
 	int job = 0;
@@ -321,7 +321,13 @@ int main() {
 	vector<float> vec_blen;
 	int total_bridges = 0;
 
-	fin.open("hiking.yaml", ios::in);
+	if(argc < 2 || argc > 2)
+	{
+		std::cerr << "Usage: " << argv[0] << "  <filename.yaml>" << std::endl;
+		return -1;
+	}
+
+	fin.open(argv[1], ios::in);
 	if(!fin)
 	{
 		cout<<"Error in opening the file"<<endl;
