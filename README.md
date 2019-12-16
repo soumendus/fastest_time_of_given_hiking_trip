@@ -64,7 +64,7 @@ The following testing approach I am following. Apart from the below strategies, 
 
 # 4. Standards and best practices.
 
-Indent the code and document it. I have done that. Organize all the classes to a header file and the function definitions to CPP files. Currently code organization is pending. I will do it eventually. I only got a few hours to work in Saturday and some time to upload the code in Sunday. Did not get much time.
+Proper indentation of the code and document it. I have done that. I have followed coding guidelines for function naming and class names. We need to organize all the classes to a header file (.h) and the function definitions to source (.cpp) files. Currently code organization is pending. I will do it eventually. I only got a few hours to work in Saturday and some time to upload the code in Sunday. Did not get much time to work on this.
 
 
 # 5. Explanation
