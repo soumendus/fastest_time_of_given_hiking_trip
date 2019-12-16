@@ -19,9 +19,3 @@ bridge:150
       speed:25
     - name:G
       speed:15
-bridge:300
-  hikers
-    - name:H
-      speed:5
-    - name:I
-      speed:15
