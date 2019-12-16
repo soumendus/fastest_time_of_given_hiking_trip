@@ -47,7 +47,7 @@ The following testing approach I am following.
           - Creation of the threads for the worker nodes.
    
    
-      - Worker Node functionality
+      -Worker Node functionality
           - Check the calculation with different inputs.
    
    
