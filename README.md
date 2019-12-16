@@ -23,20 +23,20 @@ additional hiker crosses with the team (E at 2.5 ft/minute), and finally at the 
 long) two hikers are encountered (F at 25 ft/minute and G at 15 ft/minute).
 
 
-# 1. Strategy(s) - there are several ways to solve the problem, you can provide more thanone. The goal is to show us how you think.
+# 1. Strategy(s) - there are several ways to solve the problem, you can provide more thanone.
 
 
 I have devised concurrent approach to solve this problem. Activity at each bridge is an independent task which has no dependency and it can be run on a independent worker node of a cluster. Each worker node can write its result either to a shared memory which the Master node can also access or else the worker node can write its result calculating it independently to a file name say "result.out" which is in a shared filesystem which the master node can also access. Or else the worker nodes can write their result using RDMA(Remote Direct Memory Access) to the Master's node memory and the master node can read it from there. In this program, I have created Master node program and worker node program. The master node delegates work to the worker nodes in the cluster and once the result of the worker node is available, the master node calculates the total time of the trip. Since I don't have a real cluster or a resource manager to send jobs, I have simulated that using multi-threading on a SMP(Symmetric Multiprocessing) system. To simulate, maximum parallelism, I have avoided locks where it is not needed.
 
 
 
-# 2. Architecture and design- we want to see how well you architect and design solutions to complex problems.
+# 2. Architecture and design
 
 I have used Concurrent programming. Master node delegates work to worker nodes in the cluster and finally calculates the result after all the worker nodes completes their part of job.The worker nodes work all independently in a parallel manner
 so execution happens faster.
 
 
-# 3. Testing - we want to see how you approach testing of the solution.
+# 3. Testing Approach
 The following testing approach I am following. Apart from the below strategies, I have to test my own written YAML parser which needs to be bulletfroof. I have not used any available XML or YAML parser. If I would have used any available YAML/YML parsers, my testing efforts would have been less and I would have completed the coding faster. 
 
 
