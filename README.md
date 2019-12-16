@@ -64,7 +64,7 @@ The following testing approach I am following.
 
 # 4. Standards and best practices.
 
-Indent the code and document it. I have done that. Organize all the classes to a header file and the function definitions to CPP files. Currently code organization is pending. I will do it eventually. I only got a few hours to work in Saturday and some time to ubload the code in Sunday. Did not have much time.
+Indent the code and document it. I have done that. Organize all the classes to a header file and the function definitions to CPP files. Currently code organization is pending. I will do it eventually. I only got a few hours to work in Saturday and some time to upload the code in Sunday. Did not get much time.
 
 
 # 5. Explanation
