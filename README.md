@@ -34,7 +34,7 @@ so execution happens faster.
 
 
 # 3. Testing - we want to see how you approach testing of the solution.
-The following testing approach I am following.
+The following testing approach I am following. Apart from the below strategies, I have to test my own written YAML parser which needs to be bulletfroof. I have not used any available XML or YAML parser. If I would have used any available YAML/YML parsers, my testing efforts would have been less and I would have completed the coding faster. 
 
 
 (a) Test each modules based on the Test Description Specification i.e check the observed behavior, with respect to the expected behavior. Create a C++ test driver which reads test values from the input file and feeds the module under test.
