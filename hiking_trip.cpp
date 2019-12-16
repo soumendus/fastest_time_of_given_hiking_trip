@@ -13,9 +13,6 @@
 
 using namespace std;
 
-#define NO_HIKERS 9
-#define NO_BRIDGES 4
-
 /*
  * This is the struct for each hiker. They have attribute, name and speed.
  */
