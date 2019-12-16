@@ -74,11 +74,9 @@ public:
 
 		for(int i = 0; i < result_of_each.size(); i++)
 		{
-			cout<<"result"<< result_of_each[i] << endl;
 			total_resultant_time = result_of_each[i] + total_resultant_time;
 		}
 	
-		cout<<"total result"<< total_resultant_time << endl;
 		return total_resultant_time;
 	}
 };
@@ -149,7 +147,6 @@ class calculate_fastest_time_each_bridge
 public:
 	calculate_fastest_time_each_bridge(vector<struct hiker> hkr, int bridge_no, int total_hikers, float bridge_length)
 	{
-		cout<<"Called constructor"<<endl;
 		for(int i = 0;i < hkr.size(); i++)
 		{
 			struct hiker h("",0);
@@ -275,7 +272,6 @@ int get_list_of_bridge_len(vector<float>& vec_blen)
  * This thread calls the functions of the class-> calculate_fastest_time_each_bridge at each worker node.
  */
 void thread_task(calculate_fastest_time_each_bridge& o) {
-	cout<<"Called thread..."<<endl;
 	vector<struct hiker> h;
 
 	h = o.get_hikers();
@@ -289,9 +285,6 @@ void thread_task(calculate_fastest_time_each_bridge& o) {
 	o.build_pq();
 	o.push_hikers_in_queue();
 	float each_time = o.cal_time_to_cross_the_bridge();
-#if 0
-	ofstream result_file ("result.out", ios::out | ios::app);
-#endif
 	ofstream result_file;
 
 
@@ -353,7 +346,6 @@ int main() {
 			int found = next.find("hikers");
 			if(found != std::string::npos)
 			{
-				cout<<next<<endl;
 				while(getline(fin,next))
 				{
 					int found1 = next.find("hikers");
@@ -413,13 +405,10 @@ int main() {
 		calculate_fastest_time_each_bridge obj(h, i, h.size(), vec_blen[i]);
         	std::thread t1(thread_task, std::ref(obj));
         	t1.join();
-
-		cout<<"Stopping thread..."<<endl;
 	}
 	single_result_object.result_lock();
 	float result = single_result_object.calculate_result_array();
-	cout<<result<<endl;
-	cout<<"Total fastest Time for the trip = "<< " "<< result << " " <<"minutes"<< endl;
+	cout<<"Total fastest Time for the trip by using shared memory method = "<< " "<< result << " " <<"minutes"<< endl;
 	single_result_object.result_unlock();
 
 
@@ -428,8 +417,6 @@ int main() {
 	string tok("");
 	while(getline(ifs_result,result_str))
 		;
-	cout<<result_str<<endl;
-
 	vector <int> result_array;
 	float total_fastest_time_result = 0;
 
@@ -451,7 +438,7 @@ int main() {
 		total_fastest_time_result = total_fastest_time_result + result_array[i];
 	}
 
-	cout<<"Total fastest Time for the trip in file method = "<< " "<< total_fastest_time_result << " " <<"minutes"<< endl;
+	cout<<"Total fastest Time for the trip by using file method = "<< " "<< total_fastest_time_result << " " <<"minutes"<< endl;
 
 
 	ifs_result.close();
