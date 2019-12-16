@@ -1,6 +1,9 @@
 # fastest_time_of_given_hiking_trip
 ### This Program calculates the fastest time of the given hiking trip.
 
+### Usage: ./hiking_trip  <filename.yaml>
+
+
 Write a C++ program that simulates a team hiking through a forest at night. The team
 encounters a series of narrow bridges along the way. At each bridge they may meet additional
 hikers who need their help to cross the bridge.
