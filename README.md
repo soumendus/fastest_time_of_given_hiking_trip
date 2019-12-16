@@ -20,16 +20,15 @@ additional hiker crosses with the team (E at 2.5 ft/minute), and finally at the 
 long) two hikers are encountered (F at 25 ft/minute and G at 15 ft/minute).
 
 
-# 1. Strategy(s) - there are several ways to solve the problem, you can provide more than
-one. The goal is to show us how you think.
+# 1. Strategy(s) - there are several ways to solve the problem, you can provide more thanone. The goal is to show us how you think.
 
 
 I have devised concurrent approach to solve this problem. Activity at each bridge is an independent task which has no dependency and it can be run on a independent node of a cluster. It can write its result either to a shared memory which the Master node can also access or else it can write its result calculating it independently to a file name say "result.out" which is in a shared filesystem which the master node can also access. In this program, I have created Master node program and worker node program. The master node delegates work to the worker nodes in the cluster and once the result of the worker node is available, the master node calculates the total time of the trip. Since I don't have a cluster node or a resource manager to send jobs, I have simulated that using multi-threading. To simulate, maximum parallelism, I have avoided locks where it is not needed.
 
 
 
-# 2. Architecture and design- we want to see how well you architect and design solutions to
-complex problems.
+# 2. Architecture and design- we want to see how well you architect and design solutions to complex problems.
+
 I have used Concurrent programming. Master delegates work to worker nodes in the cluster and finally calculates the result when all the worker nodes completes their part of job.
 
 
