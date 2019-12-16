@@ -78,7 +78,7 @@ can cover the distance walking alone to escort the guys with the torch in the br
 
 ## Demonstrate the operation of your program using the following inputs: the hikers cross 3 bridges, at the first bridge (100 ft long) 4 hikers cross (hiker A can cross at 100 ft/minute, B at 50 ft/minute, C at 20 ft/minute, and D at 10 ft/minute), at the second bridge (250 ft long) an additional hiker crosses with the team (E at 2.5 ft/minute), and finally at the last bridge (150 ft long) two hikers are encountered (F at 25 ft/minute and G at 15 ft/minute).
 
-As per the my program and calculation, my program calculates this with maximum paraellism and the following is the result.
+As per my program's calculation, my program calculates the following with maximum paraellism and the following is the result.
 
 Time to cross the First Bridge = 19.000000 
 
