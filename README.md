@@ -87,4 +87,4 @@ Time to cross the Third Bridge = 109.000000
 
 Total fastest Time for the Entire trip =  278 minutes
 
-I have used two methods using shared memory and writing to a file in a shared File system. The result which I get is 278 minutes.
+I have used two methods using shared memory and writing to a file in a shared File system. In both methods, the result which I get is 278 minutes.
