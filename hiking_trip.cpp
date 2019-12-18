@@ -443,18 +443,14 @@ int main(int argc, char** argv) {
 
 	cout<<"Total fastest Time for the trip by using file method = "<< " "<< total_fastest_time_result << " " <<"minutes"<< endl;
 
-	// Memory Cleanups: Code Yet to be tested.
-#if 0
-        for(int i = 0; i < total_bridges; i++)
-        {
-                if(list[i])
-                        delete list[i];
-        }
-
-        if(list)
-                delete list;
-
-#endif
+	// Memory Cleanups.
+	if(hlist)
+	{
+		for(int i = 0; i < total_bridges; i++)
+		{
+			hlist[i].erase(hlist[i].begin(), hlist[i].end());
+		}
+	}
 
 
 	ifs_result.close();
