@@ -67,7 +67,7 @@ The following testing approach I am following. Apart from the below strategies, 
 
 # 4. Standards and best practices.
 
-Proper indentation of the code and document it. I have done that. I have followed coding guidelines for function naming and class names. We need to organize all the classes to a header file (.h) and the function definitions to source (.cpp) files. Currently code organization is pending. I will do it eventually. I only got a few hours to work in Saturday and some time to upload the code in Sunday. Did not get much time to work on this. There will be master directory which will contain several other sub-directory like yaml-parser directory , list-creation directory, thread-creation directory and final-result directory. There will be worker directory at the same level as master directory and it will contain the main functionality of calculations at each bridge. These directory will have their respective header (.h) and source files (.cpp). 
+Proper indentation of the code and document it. I have done that. I have followed coding guidelines for function naming and class names. We need to organize all the classes to a header file (.h) and the function definitions to source (.cpp) files. Currently code organization is pending. I will do it eventually. There will be master directory which will contain several other sub-directory like yaml-parser directory , list-creation directory, thread-creation directory and final-result directory. There will be worker directory at the same level as master directory and it will contain the main functionality of calculations at each bridge. These directory will have their respective header (.h) and source files (.cpp). 
 
 
 # 5. Explanation
