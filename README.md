@@ -7,7 +7,7 @@ Soumendu Sekhar Satapathy
 satapathy.soumendu@gmail.com
 
 # fastest_time_of_given_hiking_trip
-### This Program Simulates and calculates the fastest time of the given hiking trip.
+### This Program Simulates and Calculates the Fastest Time of the given Hiking Trip.
 
 ### Usage: ./hiking_trip  hiking.yaml
 
