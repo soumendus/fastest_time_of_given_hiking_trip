@@ -6,10 +6,10 @@ Soumendu Sekhar Satapathy
 
 satapathy.soumendu@gmail.com
 
-# fastest_time_of_given_hiking_trip
-### This Program Simulates and Calculates the Fastest Time of the given Hiking Trip.
 
-### Usage: ./hiking_trip  hiking.yaml
+# This Program Simulates and Calculates the Fastest Time of the given Hiking Trip.
+
+# Usage: ./hiking_trip  hiking.yaml
 
 
 Write a C++ program that simulates a team hiking through a forest at night. The team
